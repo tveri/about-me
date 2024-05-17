@@ -1,0 +1,31 @@
+header {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    height: 10vh;
+    width: var(--width);
+    background-color: var(--background-color-2);
+    box-shadow: 0 1px 2px #0006;
+}
+
+.logo_container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    height: 80%;
+    border-radius: 50%;
+    cursor: pointer;
+    filter: drop-shadow(0 0 20px #fff2);
+    
+    transition: 
+        scale 0.2s ease,
+        filter 0.5s ease-in-out;
+
+    &:hover {
+        scale: 1.05;
+        filter: drop-shadow(0 0 20px #fff6);
+    }
+}
